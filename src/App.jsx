@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from './components/Login'
+import Login from './components/LoginRegistro'
 
 function App() {
 

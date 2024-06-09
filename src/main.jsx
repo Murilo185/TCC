@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Login from './components/Login.jsx';
+import Login from './components/LoginRegistro.jsx';
 
 const router = createBrowserRouter([
   {
