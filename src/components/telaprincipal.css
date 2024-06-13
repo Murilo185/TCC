@@ -1,0 +1,11 @@
+body{
+    background-color: grey;
+    margin: 0pc;
+    padding: 0pc;
+    justify-content: center;
+}
+
+input{
+    justify-content: center;
+    align-content: center;
+}
