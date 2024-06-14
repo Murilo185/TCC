@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: grey;
+    background-color: lightgray;
     margin: 0pc;
     padding: 0pc;
 }
@@ -11,30 +17,56 @@ body{
     margin-top: 20px;
 }
 
-img{
-    width: 100px;
-}
-
 #column-wrapper {
     text-align: center; /* Centraliza o conteúdo inline */
 }
   
 #containner {
-    column-count: 2;
-    column-gap: 10px;
-    width: 80%; /* Ajuste conforme necessário */
-    display: block; /* Permite centralizar com text-align */
+    width: 100%; /* Ajuste conforme necessário */
+    display: flex; /* Permite centralizar com text-align */
+    flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
 }
 
-#containner >div{
-    width: 0px;
+.nomeProduto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     
+    color: purple;
+    font-weight: 800;
 }
 
-#containner > div> a>img{
-    border: 2px solid black;
+.Descricao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
 }
+span{
+    font-size: 15px;
+    color: green;
+}
+
+#containner>div{
+    
+    flex-direction: column;
+    width: 40%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 2px 2px;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+#containner >div>a>img{
+    background-color: white;
+    width: 100px;
+    border-radius: 10px;
+}
+
 
 #whatsapp{
     position: absolute;
