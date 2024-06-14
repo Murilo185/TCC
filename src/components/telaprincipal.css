@@ -2,10 +2,42 @@ body{
     background-color: grey;
     margin: 0pc;
     padding: 0pc;
-    justify-content: center;
 }
 
-input{
-    justify-content: center;
-    align-content: center;
+#busca{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+img{
+    width: 100px;
+}
+
+#column-wrapper {
+    text-align: center; /* Centraliza o conteúdo inline */
+}
+  
+#containner {
+    column-count: 2;
+    column-gap: 10px;
+    width: 80%; /* Ajuste conforme necessário */
+    display: block; /* Permite centralizar com text-align */
+    margin: 0 auto;
+}
+
+#containner >div{
+    width: 0px;
+    
+}
+
+#containner > div> a>img{
+    border: 2px solid black;
+}
+
+#whatsapp{
+    position: absolute;
+    width: 50px;
+    margin-left: 300px;
 }
