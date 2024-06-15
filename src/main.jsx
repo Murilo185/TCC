@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <TelaPrincipal />
   },
+   {
+    path: "/recuperarsenha",
+     element: <RecuperarSenha />
+   },
   {
     path: "/login",
     element: <Login />
