@@ -8,6 +8,9 @@ import azulejo from '../assets/azulejo.png'
 import agenda from '../assets/agenda.png'
 import chaveiro from '../assets/almochaveiro.png'
 import whatsapp from '../assets/whatsapp.svg'
+import facebook from '../assets/facebook.svg'
+import instagram from '../assets/instagram.svg'
+import email from '../assets/email.svg'
 
 export default function TelaPrincipal (){
     return (
@@ -73,7 +76,17 @@ export default function TelaPrincipal (){
                 <p className="Descricao">A partir de <span>12</span>,90</p>
             </div>
         </div>
+        
         <img src={whatsapp} alt="" id='whatsapp'/>
+        <div id="Rodape">
+            <p>Outros contatos</p>
+            <div id="IconesContato">
+                <img src={facebook} alt="" />
+                <img src={instagram} alt="" />
+                <img src={email} alt="" />
+            </div>
+            
+        </div>
     </>
     )
 }
