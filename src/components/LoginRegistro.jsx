@@ -8,15 +8,17 @@ import axios from "axios";
 
 //Constante da tela de login e registro//
 const Login = () => {
+
+  const [type, setType] = useState('text')
+
   // Função de esconder e mostrar senha
-  // function myFunction() {
-  //     var x = document.getElementById("myInput");
-  //     if (x.type === "password") {
-  //       x.type = "text";
-  //     } else {
-  //       x.type = "password";
-  //     }
-  //   }
+  function toggleType() {
+    if(type == 'password'){
+        setType('text')
+      }else{
+        setType('password')
+      }
+  }
 
   const [action, setAction] = useState("Login");
 
@@ -63,8 +65,12 @@ const Login = () => {
         <div className="input">
           
           <AiFillEyeInvisible size={40} />
-          <input type="password" id="myInput" placeholder="Senha" />
+          <input id="myInput" type={type} placeholder="Senha" />
           {/*Tentativa de esconder e mostrar senha <input type="checkbox" onclick="myFunction()"/> */}
+          
+          <div className={``} onClick={() => toggleType()}>
+            trocar o tipo
+          </div>
 
         </div>
 
@@ -126,6 +132,7 @@ const Login = () => {
           >
             Cadastre-se aqui.
           </a>
+
         
         </div>
       )}
