@@ -14,7 +14,7 @@ export default function Cabecalho (){
         <div id="notificacaoUsuarioCarrinho">
             <img src={notificacao} id='notificacao'/>
 
-            <a href="./LoginRegistro">
+            <a href="./login">
                 <img src={usuario} id='usuario' />
             </a>
 

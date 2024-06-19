@@ -24,7 +24,7 @@ const Login = () => {
 
   function env() {
     axios
-      .get("http://localhost:3000/")
+      .get("http://localhost:3000/login/")
       .then(function (response) {
         console.log(response.data);
       })
