@@ -8,13 +8,20 @@ export default function Cabecalho (){
     
     return (
     <div id='cabecalho'>
+
         <img src={logo} id='logo'/>
 
         <div id="notificacaoUsuarioCarrinho">
             <img src={notificacao} id='notificacao'/>
-            <img src={usuario} id='usuario' />
+
+            <a href="./login">
+                <img src={usuario} id='usuario' />
+            </a>
+
             <img src={carrinho} id="carrinho" />
+        
         </div>
+
     </div>
 
     )
