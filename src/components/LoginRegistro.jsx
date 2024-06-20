@@ -3,6 +3,7 @@ import "./LoginRegistro.css";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { IoMdPerson } from "react-icons/io";
 import { AiTwotoneMail } from "react-icons/ai";
+import {auth, getRedirectResult, provider, signInWithPopup, GoogleAuthProvider} from '../utils/firebase.js'
 
 import axios from "axios";
 
@@ -32,6 +33,20 @@ const Login = () => {
         console.log(error);
       });
   }
+  
+  async function signInPopup(){
+      const provider = new GoogleAuthProvider();
+      try {
+        const result = await signInWithPopup(auth, provider);
+        const user = result.user;
+        console.log(user)
+        // Redirecionar ou atualizar a UI após o login bem-sucedido
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  
+
 
   //Retorno do login e registro//
   return (
@@ -90,7 +105,7 @@ const Login = () => {
         <div className="termo">
 
           <input type="checkbox" id="contrato" name="contrato" value="termo" />
-          <label for="contrato">Aceito os termos de uso.</label>
+          <label htmlFor="contrato">Aceito os termos de uso.</label>
 
         </div>
       )}
@@ -136,7 +151,9 @@ const Login = () => {
         
         </div>
       )}
-
+      <button onClick={()=>{
+        signInPopup()
+      }}><p>login com o Google</p></button>
     </div>
   );
 };
