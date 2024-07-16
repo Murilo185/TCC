@@ -64,6 +64,7 @@ const Login = () => {
         {action === "Login" ? (
           <div></div>
         ) : (
+          // Nome
           <div className="input">
             <IoMdPerson size={40} />
             <input type="text" placeholder="Nome" />
@@ -71,26 +72,22 @@ const Login = () => {
         )}
 
         <div className="input">
-          
+       {/* Email */}
           <AiTwotoneMail size={40} />
           <input type="email" placeholder="Email" />
 
         </div>
-        
+        <div className={``} onClick={() => toggleType()}>
         <div className="input">
           
-          <AiFillEyeInvisible size={40} />
+        <AiFillEyeInvisible size={40} />
+         
           <input id="myInput" type={type} placeholder="Senha" />
-          {/*Tentativa de esconder e mostrar senha <input type="checkbox" onclick="myFunction()"/> */}
-          
-          <div className={``} onClick={() => toggleType()}>
-            trocar o tipo
-          </div>
-
+            </div>
         </div>
-
       </div>
 
+       
       {action === "Registro" ? (
         <div></div>
       ) : (
@@ -146,6 +143,24 @@ const Login = () => {
             }}
           >
             Cadastre-se aqui.
+          </a>
+
+        
+        </div>
+      )}
+      {action === "Login" ? (
+        <div></div>
+      ) : (
+           <div className="possuilogin">
+          
+          Já possui uma conta?{" "}
+          <a
+            href="#"
+            onClick={() => {
+              setAction("Login");
+            }}
+          >
+            Faça Login aqui.
           </a>
 
         

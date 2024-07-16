@@ -117,14 +117,27 @@
 }
 
 .termo{
-    padding-left: 62px;
+    padding-left: 75px;
     margin-top: 27px;
     color: #733A8E;
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 10px;
     margin-right: 80px;
     font-weight: 700;
+}
+
+.possuilogin{
+    padding-left: 55px;
+   
+    color: #733A8E;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  font-weight: 700;
+    margin-right:50px;
+    column-gap: 15px;
 }
